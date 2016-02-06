@@ -41,6 +41,12 @@ public class Command_tag extends TFM_Command
                 return true;
             }
             else if ("clearall".equalsIgnoreCase(args[0]))
+           {
+                if (!TFM_AdminList.isSuperAdmin(sender))
+                {
+                    playerMsg(TFM_Command.MSG_NO_PERMS);
+                    return true;
+                }
                 TFM_Util.adminAction(sender.getName(), "Removing all tags", false);
 
                 int count = 0;
