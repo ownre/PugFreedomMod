@@ -7,7 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandPermissions(level = AdminLevel.SENIOR, source = SourceType.BOTH, blockHostConsole = true)
+@CommandPermissions(level = AdminLevel.SENIOR, source = SourceType.BOTH, blockHostConsole = false)
 @CommandParameters(description = "Kick all non-superadmins on server.", usage = "/<command>")
 public class Command_kicknoob extends TFM_Command
 {
@@ -20,7 +20,7 @@ public class Command_kicknoob extends TFM_Command
         {
             if (!TFM_AdminList.isSuperAdmin(player))
             {
-                player.kickPlayer(ChatColor.RED + "All non-superadmins were kicked by " + sender.getName() + ".");
+                player.kickPlayer(ChatColor.RED + "Sorry, but all non-superadmins were kicked by " + sender.getName() + ".");
             }
         }
 
