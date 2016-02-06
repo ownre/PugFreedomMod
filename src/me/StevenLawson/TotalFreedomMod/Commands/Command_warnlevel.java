@@ -6,7 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandPermissions(level = AdminLevel.ALL, source = SourceType.ONLY_IN_GAME)
+@CommandPermissions(level = AdminLevel.ALL, source = SourceType.ONLY_IN_GAME, blockHostConsole = true)
 @CommandParameters(description = "Shows a players warning count", usage = "/<command>", aliases = "wl")
 public class Command_warnlevel extends TFM_Command
 {
