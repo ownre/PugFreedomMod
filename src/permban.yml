@@ -2,5 +2,7 @@
 # Permanent Bans
 #
 
-thugpuglife: []
-alfafilfa: []
+# Possible rovertdude imposer
+FakeAdmin:
+  - 69.97.*.*
+# Caught imposing as rovertdude multiple times - global banned.
