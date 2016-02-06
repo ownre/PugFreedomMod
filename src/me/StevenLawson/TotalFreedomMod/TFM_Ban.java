@@ -141,7 +141,7 @@ public class TFM_Ban
     {
         final StringBuilder message = new StringBuilder("You");
 
-        message.append(type == BanType.IP ? "r IP address is" : " are").append(" temporarily banned from this server.");
+        message.append(type == BanType.IP ? "r IP address is" : " are").append(" temporarily banned from this server. (Possible rangeban).");
         message.append("\nAppeal at ").append(ChatColor.GOLD).append(TFM_ConfigEntry.SERVER_BAN_URL.getString());
 
         if (!reason.equals("none"))
