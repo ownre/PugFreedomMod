@@ -116,7 +116,7 @@ public class TFM_CommandBlocker
 
         // Check for plugin specific commands
         final String[] commandParts = command.split(" ");
-        if (commandParts[0].contains(":"))
+        if (commandParts[0].contains(";"))
         {
             if (doAction)
             {
