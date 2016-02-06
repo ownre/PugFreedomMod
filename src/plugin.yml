@@ -1,8 +1,10 @@
 name: PugFreedomMod
 main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
-version: 4.3
+version: 1.1
 description: Plugin for the Pug Freedom server.
 softdepend: [BukkitTelnet, WorldEdit, Essentials]
-authors: [Madgeek1450, Prozza, rovertdude]
+authors: [Madgeek1450, Prozza, rovertdude, Duckeroo, xXStellaXx]
 
 # plugin.yml is no longer used to define commands.
+# You may not remove any of the authors.
+# Soft depend is necessary.
