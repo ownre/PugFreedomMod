@@ -12,7 +12,7 @@ server:
   address: PugFreedom.g-s.nu
 
   # Shown at the server list
-  motd: PugFreedom &8- Minecraft %mcversion%
+  motd: Official PugFreedom &8- Minecraft %mcversion%
 
   # Every word in the MOTD will be a different color unless prefixed by a color code
   colorful_motd: true
@@ -88,9 +88,9 @@ blocked_commands:
   - 'n:b:/time:Server-side time changing is disabled. Please use /ptime to set your own personal time.'
   - 'n:b:/gamemode:Use /creative and /survival to set your gamemode.'
   - 'n:a:/ban:_'
-  - 'n:b:/pardon:_'
+  - 's:b:/pardon:_'
   - 'n:a:/ban-ip:_'
-  - 'n:b:/pardon-ip:_'
+  - 's:b:/pardon-ip:_'
   - 'n:b:/toggledownfall:_'
   - 'n:b:/effect:Please use /potion to set effects.'
   - 'n:b:/enderchest:_'
@@ -133,8 +133,9 @@ blocked_commands:
   - 's:b:/tpall:_'
   - 's:b:/setblock:_'
   - 's:b:/green:_'
-  - 'n:b:/gamerule:_'
+  - 't:b:/gamerule:_'
   - 'n:b:/togglejail:_'
+  - 's:u:/summon:_'
 
   # Superadmin commands - Auto-eject
   - 's:a:/stop:_'
@@ -238,6 +239,8 @@ announcer:
     - 'PugFreedom does not accept any form of donations out of server.pro!'
     - 'Racism, Nazism, and Sexism is strictly forbidden!'
     - 'Do not ask for staff! Apply at pugfreedommod.boards.net!'
+    - 'Death and troll potions are not allowed!'
+    - 'Staff are here to help!'
 
 # Players who cannot be banned by username
 unbannable_usernames:
