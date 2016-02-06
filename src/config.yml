@@ -21,7 +21,6 @@ server:
   owners:
     - rovertdude
     - imbackherobrine
-    - CONSOLE
 
   # URL players should appeal for bans at
   ban_url: http://PugFreedommod.boards.net/
@@ -47,7 +46,7 @@ allow:
   fluid_spread: false
   lava_place: false
   lava_damage: false
-  water_place: false
+  water_place: true
   tnt_minecarts: false
   explosions: false
 
@@ -88,9 +87,9 @@ blocked_commands:
   # Disabled commands
   - 'n:b:/time:Server-side time changing is disabled. Please use /ptime to set your own personal time.'
   - 'n:b:/gamemode:Use /creative and /survival to set your gamemode.'
-  - 'n:b:/ban:_'
+  - 'n:a:/ban:_'
   - 'n:b:/pardon:_'
-  - 'n:b:/ban-ip:_'
+  - 'n:a:/ban-ip:_'
   - 'n:b:/pardon-ip:_'
   - 'n:b:/toggledownfall:_'
   - 'n:b:/effect:Please use /potion to set effects.'
@@ -98,7 +97,7 @@ blocked_commands:
   - 'n:b:/spreadplayers:_'
   - 'n:b:/execute:_'
   - 'n:b:/blockdata:_'
-  - 'n:b:/clearhistory:_'
+  - 'n:a:/clearhistory:_'
   - 'n:b:/save-all:_'
   - 'n:b:/save-on:_'
   - 'n:b:/save-off:_'
@@ -112,8 +111,8 @@ blocked_commands:
   - 's:b:/superpickaxe:_'
   - 's:b:/brush:_'
   - 's:b:/size:_'
-  - 's:b://mask:_'
-  - 's:b:/mat:_'
+  - 's:a://mask:_'
+  - 's:a:/mat:_'
   - 's:b://butcher:_'
   - 's:b:/scoreboard:_'
   - 's:b:/setspawn:_'
@@ -121,13 +120,13 @@ blocked_commands:
   - 's:b:/tellraw:_'
   - 's:b:/forestgen:_'
   - 's:b:/setidletimeout:_'
-  - 's:b:/mail sendall:_'
+  - 's:a:/mail sendall:_'
   - 's:b:/eco reset:_'
   - 's:b:/mask:_'
   - 's:b:/gmask:_'
   - 's:b:/lrbuild:_'
   - 's:b:/defaultgamemode:_'
-  - 's:b:/reload:_'
+  - 's:a:/reload:_'
   - 's:b:/title:_'
   - 's:b:/worldborder:_'
   - 's:b:/weather:_'
@@ -168,8 +167,8 @@ disable:
 
 # Enable misc. features
 landmines_enabled: false
-mp44_enabled: false
-tossmob_enabled: false
+mp44_enabled: true
+tossmob_enabled: true
 
 # Moblimiter
 moblimiter:
@@ -186,7 +185,7 @@ flatlands:
   generate: true
 
   # Flatlands generation parameters - Uses CleanroomGenerator syntax - http://dev.bukkit.org/server-mods/cleanroomgenerator/
-  generate_params: 16,stone,32,dirt,1,grass
+  generate_params: 16,stone,32,dirt,1,grass,110
 
 # Admin-Only Mode
 admin_only_mode: false
@@ -279,10 +278,12 @@ unbannable_usernames:
   - stampylongnose
   - dantdm
   - gizzy14gazza
+  - rovertdude
+  - BrickBattleYT
 
 # IPs that can not be supered
 noadmin_ips:
-  - 167.114.97.16
+  - 92.174.15.124
 
 # TwitterBot - Used to allow superadmins to verify themselves using twitter
 twitterbot:
