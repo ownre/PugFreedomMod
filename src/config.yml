@@ -101,6 +101,8 @@ blocked_commands:
   - 'n:b:/save-all:_'
   - 'n:b:/save-on:_'
   - 'n:b:/save-off:_'
+  - 's:b:/gadmin:_'
+  - 's:b:/toggle:_'
 
   # Superadmin commands
   - 's:b:/kick:_'
