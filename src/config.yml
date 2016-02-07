@@ -85,6 +85,7 @@ allow:
 #
 blocked_commands:
   # Disabled commands
+  - 'n:u:/toggle:_'
   - 'n:b:/time:Server-side time changing is disabled. Please use /ptime to set your own personal time.'
   - 'n:b:/gamemode:Use /creative and /survival to set your gamemode.'
   - 'n:a:/ban:_'
