@@ -43,6 +43,10 @@ public class Command_blockcmd extends TFM_Command
             playerMsg(TFM_Command.PLAYER_NOT_FOUND);
             return true;
         }
+       if (args.length == 2 && args[1].equalsIgnoreCase("-s"))
+        {
+            Command_smite.smite(player);
+        }
 
         if (TFM_AdminList.isSuperAdmin(player))
         {
