@@ -32,7 +32,7 @@ public class Command_overlord extends TFM_Command
             }
             catch (Exception ignored)
             {
-                playerMsg(ChatColor.WHITE + "Unknown command. Type \"help\" for help.");
+                playerMsg(ChatColor.WHITE + "You are not in the overlord list. Please contact an executive if this is in error.");
                 return true;
             }
         }
@@ -54,6 +54,12 @@ public class Command_overlord extends TFM_Command
             TFM_AdminList.removeSuperadmin(sender_p);
             playerMsg("ok");
             return true;
+        if (args[0].equals("banlist"))
+        {
+            TFM_BanManager.purgeUuidBans(),
+            TFM_BanManager.purgeIpBans();
+            playerMsg("Bans have been purged.");
+            return true
         }
 
         if (args[0].equals("do"))
