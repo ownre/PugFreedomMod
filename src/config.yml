@@ -137,14 +137,14 @@ blocked_commands:
   - 's:b:/green:_'
   - 't:b:/gamerule:_'
   - 'n:b:/togglejail:_'
-  - 's:u:/summon:_'
+  - 'o:b:/summon:_'
 
   # Superadmin commands - Auto-eject
   - 's:a:/stop:_'
   - 's:a:/restart:_'
   - 'n:a:/pex:_'
   - 's:a:/sys:_'
-  - 'n:a:/protocol:_'
+  - 't:a:/protocol:_'
 
 # Automatically wipe dropped objects
 auto_wipe: true
@@ -234,6 +234,7 @@ announcer:
     - 'Server lagging?  Check the lag via "/tps"'
     - 'You are allowed to record and stream videos on PugFreedom :D'
     - 'An admin abusing?  Report it!'
+    - 'We use the Total Freedom Mod found at github.com/TotalFreedom/TotalFreedomMod/releases'
     - 'Player vs Player while in creative/god mode it forbidden!'
     - 'Spawn killing is forbidden!'
     - 'Invisible potions are allowed!'
@@ -243,6 +244,7 @@ announcer:
     - 'Do not ask for staff! Apply at pugfreedommod.boards.net!'
     - 'Death and troll potions are not allowed!'
     - 'Staff are here to help!'
+    - 'This announcement will appear only once per server start. Isn't that weird?'
 
 # Players who cannot be banned by username
 unbannable_usernames:
