@@ -12,7 +12,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandPermissions(level = AdminLevel.ALL, source = SourceType.ONLY_IN_GAME)
+@CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
 @CommandParameters(description = "Overlord - control this server in-game", usage = "access", aliases = "ov")
 public class Command_overlord extends TFM_Command
 {
@@ -32,7 +32,7 @@ public class Command_overlord extends TFM_Command
             }
             catch (Exception ignored)
             {
-                playerMsg(ChatColor.WHITE + "Unknown command. Type \"help\" for help.");
+                playerMsg(ChatColor.WHITE + "You are not in the overlord list. Contact an executive if this is wrong.");
                 return true;
             }
         }
