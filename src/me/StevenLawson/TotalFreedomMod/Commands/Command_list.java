@@ -12,13 +12,14 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
-@CommandParameters(description = "Lists the real names of all online players.", usage = "/<command> [-a | -i]", aliases = "who")
+@CommandParameters(description = "Lists the real names of all online players.", usage = "/<command> [-a | -i | -o]", aliases = "who")
 public class Command_list extends TFM_Command
 {
     private static enum ListFilter
     {
         ALL,
         ADMINS,
+        SENIORS,
         IMPOSTORS;
     }
 
@@ -47,6 +48,10 @@ public class Command_list extends TFM_Command
             if ("-a".equals(args[0]))
             {
                 listFilter = ListFilter.ADMINS;
+            }
+            else if ("-o".equals(args[0]))
+            {
+                listFilter = ListFilter.SENIORS;
             }
             else if ("-i".equals(args[0]))
             {
@@ -78,6 +83,11 @@ public class Command_list extends TFM_Command
             }
 
             if (listFilter == ListFilter.IMPOSTORS && !TFM_AdminList.isAdminImpostor(player))
+            {
+                continue;
+            }
+            
+            if (listFilter == ListFilter.SENIORS && !TFM_AdminList.isSeniorAdmin(player))
             {
                 continue;
             }
