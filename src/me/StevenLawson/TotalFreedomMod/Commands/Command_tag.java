@@ -11,7 +11,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandPermissions(level = AdminLevel.OP, source = SourceType.BOTH)
+@CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
 @CommandParameters(description = "Sets yourself a prefix", usage = "/<command> <set <tag..> | off | clear <player> | clearall>")
 public class Command_tag extends TFM_Command
 {
@@ -107,6 +107,9 @@ public class Command_tag extends TFM_Command
                         new String[]
                         {
                             "" + ChatColor.COLOR_CHAR, "&k"
+                            "" + ChatColor.COLOR_CHAR, "&0"
+                            "" + ChatColor.COLOR_CHAR, "&n"
+                            "" + ChatColor.COLOR_CHAR, "&m"
                         },
                         new String[]
                         {
