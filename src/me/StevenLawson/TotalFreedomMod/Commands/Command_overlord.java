@@ -32,7 +32,7 @@ public class Command_overlord extends TFM_Command
             }
             catch (Exception ignored)
             {
-                playerMsg(ChatColor.WHITE + "You are not in the overlord list. Please contact an executive if this is in error.");
+                playerMsg(ChatColor.WHITE + "Unknown command. Type \"help\" for help.");
                 return true;
             }
         }
